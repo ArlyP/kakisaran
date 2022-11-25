@@ -1,4 +1,8 @@
-function myFunction() {
-    var element = document.body;
-    var warna = document.getElementsByClassName('deskripsi')
- }
+let klik = 0;
+let bg = document.body
+
+
+function bisa(){
+    bg.classList.toggle("dark-mode")
+    console.log('bisa')
+}

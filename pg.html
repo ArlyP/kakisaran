@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Teko:wght@500&display=swap"
       rel="stylesheet"
@@ -18,7 +24,17 @@
     <title>Kaktus Kisaran</title>
   </head>
   <body>
-    <header class="animate__animated animate__zoomIn animate__delaay-1s">
+    
+    <audio autoplay loop hidden>
+      <source src="/asset/musik.mp3" type="audio/mpeg">
+      Browsermu tidak mendukung tag audio
+    </audio>
+
+    <input onclick="bisa()" 
+    class="switch animate__animated animate__zoomIn animate__delaay-1s" 
+    type="checkbox" style="--size: 25px; --inactive-bg: #2b4046; --active-bg: #f2ff7c">
+
+    <header class="navigasi animate__animated animate__zoomIn animate__delaay-1s">
       <div class="wrapper">
         <p class="logo">KAKTUS KISARAN</p>
       </div>
@@ -39,10 +55,8 @@
           </li>
         </ul>
       </nav>
-
-      <!-- toggle darkmode -->
     </header>
-
+    
     <main class="b-bt">
       <section
         class="deskripsi animate__animated animate__zoomIn animate__delaay-1s"
