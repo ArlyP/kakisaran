@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,26 +26,39 @@
   </head>
   <body>
     
-    <audio autoplay loop hidden>
+    <!-- START AUDIO -->
+    <!-- <audio autoplay loop hidden>
       <source src="/asset/musik.mp3" type="audio/mpeg">
       Browsermu tidak mendukung tag audio
-    </audio>
+    </audio> -->
+    <!-- END AUDIO -->
 
+    <!-- START TOGGLE DARKMODE -->
     <input onclick="bisa()" 
     class="switch animate__animated animate__zoomIn animate__delaay-1s" 
     type="checkbox" style="--size: 25px; --inactive-bg: #2b4046; --active-bg: #f2ff7c">
-
+    <!-- END TOGGLE DARKMODE -->
+    
+    <!-- START HEADER -->
     <header class="navigasi animate__animated animate__zoomIn animate__delaay-1s">
       <div class="wrapper">
         <p class="logo">KAKTUS KISARAN</p>
       </div>
-
+      <!-- END HEADER -->
+      
+      <!-- START NAVIGASI -->
       <nav id="navbar">
         <ul class="navigasi">
           <li>
             <a href="https://www.instagram.com/kaktus_kis/">
               <img src="/img/cart.png" alt="" height="20px" />
               Katalog
+            </a>
+          </li>
+          <li>
+            <a href="/game/game.html">
+              <img src="/game/console.png" alt="" height="20px" />
+              Game
             </a>
           </li>
           <li>
@@ -56,9 +70,11 @@
         </ul>
       </nav>
     </header>
+    <!-- END NAVIGASI -->
     
-    <main class="b-bt">
-      <section
+     <!-- START CONTENT -->
+     <main class="b-bt">
+       <section
         class="deskripsi animate__animated animate__zoomIn animate__delaay-1s"
       >
         <div class="text">
@@ -73,7 +89,7 @@
       </section>
 
       <section
-        class="ilustrasi animate__animated animate__zoomIn animate__delaay-1s"
+      class="ilustrasi animate__animated animate__zoomIn animate__delaay-1s"
       >
         <img
           class="kaktus animasi bounce"
@@ -102,18 +118,18 @@
       <section
         class="ilustrasi animate__animated animate__zoomIn animate__delaay-1s"
       >
-        <img
+      <img
           class="kaktus animasi bounce"
           src="/img/kakis2.png"
           alt="gambar Kakktus"
           height="300px"
-        />
+          />
       </section>
     </main>
 
-    <main class="">
+    <main class="b-bt">
       <section
-        class="deskripsi animate__animated animate__zoomIn animate__delaay-1s"
+      class="deskripsi animate__animated animate__zoomIn animate__delaay-1s"
       >
         <div class="text">
           <h1>Kaktus Kisaran</h1>
@@ -129,7 +145,7 @@
       <section
         class="ilustrasi animate__animated animate__zoomIn animate__delaay-1s"
       >
-        <img
+      <img
           class="kaktus animasi bounce"
           src="/img/kakis3.png"
           alt="gambar Kakktus"
@@ -137,11 +153,26 @@
         />
       </section>
     </main>
+    <!-- END CONTENT -->
+    
+    <!-- START CARD -->
+    <main class="b-bt">
 
+        <div class="card1">
+            <img src="/img/kamar.jpg" alt="" height="300px" width="300px">
+        </div>
+
+        <div class="card2">
+          <img src="/img/ruangtamu.jpg" alt="" height="300px" width="300px">
+        </div>
+    </main> 
+      <!-- END CARD -->
+
+        
     <footer class="animate__animated animate__zoomIn animate__delaay-1s">
       <p>Copyright By @Arly</p>
     </footer>
-
+    
     <script src="script.js"></script>
   </body>
 </html>

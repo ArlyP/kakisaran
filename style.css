@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    display: flex;
+  display: flex;
   border: 5px #476247 solid;
   box-shadow: 2px 2px 8px 12px rgba(48, 87, 94, 0.533);
   border-radius: 0 100px;
@@ -75,10 +75,11 @@ a:hover {
     to right,
     #f2ff7c,
     #a1ffce
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
-  
-  main {
-    height: 70vh;
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+main {
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -105,34 +106,79 @@ a:hover {
 }
 
 footer {
-    display: flex;
+  display: flex;
   justify-content: center;
   /* border: 1px solid yellow; */
 }
 
 .kaktus {
-    height: 360px;
+  height: 360px;
 }
 
+
 @media only screen and (max-width: 480px) {
-    header {
+  header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+
   main {
     margin-top: 50px;
     font-size: 1.2em;
     height: auto;
     align-items: center;
     display: block;
-}
+  }
 
-    .logo{
-        margin-right: 10px;
-        text-align: center;
-    }
+  .logo {
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .deskripsi {
+    justify-content: center;
+    text-align: center;
+    width: auto;
+  }
+  
+  .ilustrasi img {
+    padding-left: 67px;
+    height: 300px;
+  }
+  .navigasi{
+   width: fit-content;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 270px;
+  }
+
+  main {
+    margin-top: 50px;
+    font-size: 1.2em;
+    height: auto;
+    align-items: center;
+    display: block;
+  }
+
+ .navigasi{
+  width: fit-content;
+ }
+
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .logo {
+    margin-right: 10px;
+    text-align: center;
+  }
 
   .deskripsi {
     justify-content: center;
@@ -141,52 +187,12 @@ footer {
   }
 
   .ilustrasi img {
-    padding-left: 67px;
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 400px) {
-    header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 270px;
-}
-
-main {
-    margin-top: 50px;
-    font-size: 1.2em;
-    height: auto;
-    align-items: center;
-    display: block;
-  }
-
-  a{
-    margin-left: 12px;
-  }
-
-  .wrapper{
-    padding: 0;
-  }
-
-  .logo {
-      margin-right: 10px;
-      text-align: center;
-    }
-    
-    .deskripsi {
-        justify-content: center;
-        text-align: center;
-    width: auto;
-  }
-
-  .ilustrasi img {
     height: 260px;
-    padding-left: 62px;
+    padding-left: 60px;
   }
 
-  element.style{
-    --size:20px;
+  element.style {
+    --size: 20px;
   }
 }
 
@@ -218,48 +224,44 @@ main {
 }
 
 .b-bt {
-    border-bottom: 5px #fff solid;
-    border-radius: 50px;
+  border-bottom: 5px #fff solid;
+  border-radius: 50px;
 }
 
-@media only screen and (max-width: 400px){
-  input{
+@media only screen and (max-width: 400px) {
+  input {
     size: 20px;
   }
 }
 
 /* TEMA DARK MODE */
-.dark-mode{
-  background: linear-gradient(
-    to left,
-    #2b4046,
-    #325e4d
-    ); 
-  }
-  
-  .dark-mode header {
-    display: flex;
-border: 5px rgba(0, 0, 0, 0.432) solid;
-box-shadow: 2px 2px 8px 12px rgba(18, 32, 34, 0.533);
-border-radius: 0 100px;
-justify-content: space-around;
-background-color: #1e2b18;
-opacity: 0.8;
-background-image: linear-gradient(135deg, #374b2e 25%, transparent 25%),
-linear-gradient(225deg, rgb(19, 44, 41) 25%, transparent 25%),
-linear-gradient(45deg, #283122 25%, transparent 25%),
-  linear-gradient(315deg, rgb(51, 70, 40) 25%, rgb(32, 85, 73) 25%);
-background-position: 10px 0, 10px 0, 0 0, 0 0;
-background-size: 20px 20px;
-background-repeat: repeat;
+.dark-mode {
+  background: linear-gradient(to left, #2b4046, #325e4d);
 }
 
-.dark-mode .logo{
+.dark-mode header {
+  display: flex;
+  border: 5px rgba(0, 0, 0, 0.432) solid;
+  box-shadow: 2px 2px 8px 12px rgba(18, 32, 34, 0.533);
+  border-radius: 0 100px;
+  justify-content: space-around;
+  background-color: #1e2b18;
+  opacity: 0.8;
+  background-image: linear-gradient(135deg, #374b2e 25%, transparent 25%),
+    linear-gradient(225deg, rgb(19, 44, 41) 25%, transparent 25%),
+    linear-gradient(45deg, #283122 25%, transparent 25%),
+    linear-gradient(315deg, rgb(51, 70, 40) 25%, rgb(32, 85, 73) 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat;
+}
+
+.dark-mode .logo {
   border: 5px white solid;
   background: #1e2b18;
 }
 
-.dark-mode .deskripsi{
+.dark-mode .deskripsi {
   color: white;
 }
 
@@ -281,16 +283,8 @@ background-repeat: repeat;
   color: #ffff;
   border: 2px solid #ffff;
   background: #a1ffce;
-  background: -webkit-linear-gradient(
-    to right,
-    #74be52,
-    #a1ffce
-  ); 
-  background: linear-gradient(
-    to right,
-    #374b2e,
-    #1e2b18
-  ); 
+  background: -webkit-linear-gradient(to right, #74be52, #a1ffce);
+  background: linear-gradient(to right, #374b2e, #1e2b18);
 }
 
 /* style tombol tema */
@@ -321,4 +315,21 @@ background-repeat: repeat;
 .switch:checked {
   background-color: var(--active-bg);
   background-position: calc(var(--size) / 1.75) 0;
+}
+
+.card1,
+.card2{
+  height: 300px;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.card1 img:hover,
+.card2 img:hover{ 
+ position: relative;
+ transform: translate(-3.5rem, -3.5rem);
+}
+.card1 img,
+.card2 img{ 
+ position: relative;
+ transition: all 0.5s ease-in-out;
 }
