@@ -112,3 +112,39 @@
     height: 60px;
     width: 60px;
   }
+
+
+  @media only screen and (max-width: 420px){
+    
+    .wrapper {
+      width: 300px;
+    }
+    
+    .game-container {
+      right: 44px;
+    }
+    .card-container {
+      position: relative;
+      padding-left: 0;
+      width: 90px;
+      height: 90px;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    
+    .wrapper {
+      width: 240px;
+    }
+    
+    .game-container {
+      right: 35px;
+    }
+    .card-container {
+      position: relative;
+      padding-left: 0;
+      width: 70px;
+      height: 70px;
+      cursor: pointer;
+    }
+  }
